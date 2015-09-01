@@ -12,8 +12,11 @@ module.exports = function(grunt) {
 
       // Filenames.
       names: {
-        distCSS: 'app',
-        distJS: 'app',
+        common: 'common',
+        tablet: 'tablet',
+        desktop: 'desktop',
+        wide: 'wide',
+        js: 'app',
       },
 
       // Path references.

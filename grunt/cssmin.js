@@ -11,9 +11,24 @@ module.exports = {
     keepSpecialComments: 0
   },
 
-  files: {
-    src: '<%= paths.distCSS %>/<%= names.distCSS %>.css',
-    dest: '<%= paths.distCSS %>/<%= names.distCSS %>.min.css'
+  common: {
+    src: 'dist/css/common.css',
+    dest: 'dist/css/common.min.css'
+  },
+
+  tablet: {
+    src: 'dist/css/tablet.css',
+    dest: 'dist/css/tablet.min.css'
+  },
+
+  desktop: {
+    src: 'dist/css/desktop.css',
+    dest: 'dist/css/desktop.min.css'
+  },
+
+  wide: {
+    src: 'dist/css/wide.css',
+    dest: 'dist/css/wide.min.css'
   }
 
 };

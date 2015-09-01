@@ -8,7 +8,10 @@
 
   <title>Brainsum International</title>
 
-  <link rel="stylesheet" href="dist/css/app.min.css">
+  <link rel="stylesheet" href="dist/css/common.min.css">
+  <link rel="stylesheet" href="dist/css/tablet.min.css" media="screen and (min-width: 470px)">
+  <link rel="stylesheet" href="dist/css/desktop.min.css" media="screen and (min-width: 960px)">
+  <link rel="stylesheet" href="dist/css/wide.min.css" media="screen and (min-width: 1440px)">
 </head>
 <body>
 
@@ -25,30 +28,37 @@
 
     <div id="header-left">
 
-      <div class="wrapper">
+      <div class="wrapper logo">
         <object id="logo" data="/dist/img/logo.svg" type="image/svg+xml" width="230" height="150">
           <img src="/dist/img/logo.svg" alt="BRAINSUM" width="230" height="150"/>
         </object>
         <span class="sub-logo spacious">International</span>
       </div>
 
-      <div class="wrapper right">
-        <h1 class="title">Our <span class="hr">HR</span> software</h1>
+      <div class="wrapper bottom">
+        <h1 class="title">
+          <span class="word">Our</span>
+          <span class="word hr">HR</span>
+          <span class="word">software</span>
+        </h1>
         <p class="info">
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
         </p>
       </div>
     </div>
 
-    <div id="featured" class="clearfix">
-      <img src="/dist/img/laborone-ref-img.jpg" alt="LaborOne HR Solutions" width="50%" height="50%">
+    <div id="featured">
+      <div class="img-wrapper">
+        <img src="/dist/img/laborone-ref-img.jpg" alt="LaborOne HR Solutions">
+      </div>
       <a class="spacious" href="http://www.laborone.ch">www.laborone.ch</a>
     </div>
 
     <div id="doing-more">
-      <h3>We are doing more</h3>
-      <img src="/dist/img/horisontal-laborone-mood-img.jpg" alt="LaborOne Solutions">
-      <h3>Lorem ipsum dolor sit amet.</h3>
+      <div class="wrapper">
+        <h3>We are doing more</h3>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+      </div>
     </div>
   </header>
 

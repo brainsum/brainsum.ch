@@ -6,13 +6,27 @@
 module.exports = {
 
   options: {
-    // paths: ['<%= paths.distCSS %>'],
+    // paths: ['<%= paths.srcLESS %>'],
     sourceMap: false
   },
 
-  files: {
-    src: '<%= paths.srcLESS %>/<%= names.distCSS %>.less',
-    dest: '<%= paths.distCSS %>/<%= names.distCSS %>.css'
-  }
+  common: {
+    src: 'src/less/common.less',
+    dest: 'dist/css/common.css'
+  },
 
+  tablet: {
+    src: 'src/less/tablet.less',
+    dest: 'dist/css/tablet.css'
+  },
+
+  desktop: {
+    src: 'src/less/desktop.less',
+    dest: 'dist/css/desktop.css'
+  },
+
+  wide: {
+    src: 'src/less/wide.less',
+    dest: 'dist/css/wide.css'
+  }
 };
