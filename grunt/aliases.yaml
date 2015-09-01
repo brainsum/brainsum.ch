@@ -1,0 +1,25 @@
+# Default task: run all CSS and JS tasks, then watch
+default:
+  - 'css'
+  - 'js'
+  - 'watch'
+
+# Compile LESS, auto-prefix and minify CSS
+css:
+  - 'less'
+  - 'autoprefixer'
+  - 'cssmin'
+  - 'watch:less'
+
+# Lint, concatenate and uglify JS files
+js:
+  - 'jshint'
+  - 'concat'
+  - 'uglify'
+  - 'watch:js'
+
+# Lint, concatenate and Closure Compile JS files
+'js:cc':
+  - 'jshint'
+  - 'concat'
+  - 'closurecompiler'
