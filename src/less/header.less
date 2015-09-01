@@ -1,0 +1,112 @@
+#header {
+  background: url('../img/big-shaped-bg.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#menu {
+  position: fixed;
+  width: 100%;
+  padding: .6em 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: jockeyone, sans-serif;
+
+  li {
+    padding: 0 .5em;
+  }
+}
+
+#header-left {
+  width: @header-left-width;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  height: 100%;
+
+  .wrapper {
+    width: 50%;
+
+    &:first-child {
+      margin: 0 auto;
+    }
+  }
+
+  .title {
+    white-space: nowrap;
+    font-size: 3em;
+    margin: 1.5em 0;
+
+    .hr {
+      color: #fff;
+    }
+  }
+
+  .sub-logo {
+    display: inline-block;
+    color: red;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+    font-size: .8em;
+  }
+
+  .info {
+    border-left: 2px solid @brand-color;
+    span {
+      display: block;
+      padding: 0 1em;
+      border-left: 2px solid grey;
+    }
+  }
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+
+#featured {
+  padding: 50px 50px 120px 0;
+
+  img {
+    float: right;
+  }
+
+  a {
+    display: inline-block;
+    color: inherit;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, .3);
+    padding: 1em 2em;
+    font-size: .8em;
+    font-weight: 800;
+    clear: both;
+    float: right;
+  }
+}
+
+#doing-more {
+  background-color: @brand-color;
+  position: absolute;
+  margin-left: @header-left-width;
+  font-family: jockeyone;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .8em;
+  width: 50%;
+  position: absolute;
+  bottom: -100px;
+
+  img {
+    float: right;
+  }
+
+  h3 {
+    margin: .5em 0;
+    &:last-child {
+      display: inline-block;
+    }
+  }
+}

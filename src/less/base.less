@@ -1,8 +1,18 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: jockeyone, sans-serif;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  background: #efefef;
 }
 
 a, a:visited, a:link {
   color: @brand-color;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
