@@ -1,3 +1,11 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
 .list-inline {
   margin: 0;
   padding: 0;
@@ -43,6 +51,11 @@
   white-space: nowrap;
   margin: 1.5em 0;
   display: inline-block;
+  color: #27fef9;
+  font-size: 3em;
+}
+#header-left .title .word:first-child {
+  color: #000;
 }
 #header-left .info {
   border-left: 2px solid #ffe400;
@@ -53,14 +66,6 @@
 #featured {
   padding: 50px 50px 120px 0;
   text-align: left;
-}
-#featured:before,
-#featured:after {
-  content: " ";
-  display: table;
-}
-#featured:after {
-  clear: both;
 }
 #featured img {
   float: right;
@@ -76,6 +81,7 @@
 #doing-more {
   position: absolute;
   width: 100%;
+  margin-top: -95px;
 }
 #doing-more .wrapper {
   margin-right: 20%;
@@ -91,6 +97,5 @@
 }
 #menu {
   font-size: 1em;
-  position: absolute;
-  top: 0;
+  background: rgba(0, 0, 0, 0.4);
 }

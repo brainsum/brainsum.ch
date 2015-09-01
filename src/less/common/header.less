@@ -20,9 +20,9 @@
 #header-left {
 
   .title {
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
-    color: @color-lightblue;
+    font-family: chapparal;
 
     .word {
       display: inline-block;
@@ -33,7 +33,14 @@
     }
 
     .hr {
+      background: fade(@color-lightblue, 80%);
+      transform: skewX(-10deg);
       color: #fff;
+      span {
+        display: block;
+        padding: 5px 10px 0;
+        transform: skewX(10deg);
+      }
     }
   }
 
@@ -66,6 +73,7 @@
 
 #featured {
   padding: 2em 0;
+  min-height: @featured-min-height;
   text-align: center;
 
   img {
@@ -86,8 +94,6 @@
 }
 
 #doing-more {
-  @pane-height: 32px;
-  margin-top: -@pane-height;
 
   .wrapper {
     background: url('../img/horisontal-laborone-mood-img.jpg') no-repeat right center;
@@ -104,8 +110,9 @@
   h3 {
     position: absolute;
     padding: .5em 0;
-    height: @pane-height;
+    height: @doing-more-pane-height;
     background: @color-yellow;
+    color: #000;
     display: block;
     margin: 0;
     left: 0;

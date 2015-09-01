@@ -38,7 +38,7 @@
       <div class="wrapper bottom">
         <h1 class="title">
           <span class="word">Our</span>
-          <span class="word hr">HR</span>
+          <span class="word hr"><span>HR</span></span>
           <span class="word">software</span>
         </h1>
         <p class="info">
@@ -47,7 +47,7 @@
       </div>
     </div>
 
-    <div id="featured">
+    <div id="featured" class="clearfix">
       <div class="img-wrapper">
         <img src="/dist/img/laborone-ref-img.jpg" alt="LaborOne HR Solutions">
       </div>

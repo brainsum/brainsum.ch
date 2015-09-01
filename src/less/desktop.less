@@ -25,6 +25,12 @@
     white-space: nowrap;
     margin: 1.5em 0;
     display: inline-block;
+    color: @color-lightblue;
+    font-size: 3em;
+
+    .word:first-child {
+      color: #000;
+    }
   }
 
   .info {
@@ -38,7 +44,6 @@
 #featured {
   padding: 50px 50px 120px 0;
   text-align: left;
-  .clearfix();
 
   img {
     float: right;
@@ -57,6 +62,7 @@
 #doing-more {
   position: absolute;
   width: 100%;
+  margin-top: -@doing-more-pane-height - @doing-more-bg-height / 2;
 
   .wrapper {
     margin-right: 20%;
@@ -77,6 +83,5 @@
 
 #menu {
   font-size: 1em;
-  position: absolute;
-  top: 0;
+  background: rgba(0, 0, 0, .4);
 }
