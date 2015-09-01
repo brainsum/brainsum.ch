@@ -23,7 +23,6 @@ module.exports = function(grunt) {
         distJS: '<%= paths.distRoot %>/js',
 
         srcRoot: 'src',
-        srcSASS: '<%= paths.srcRoot %>/sass',
         srcLESS: '<%= paths.srcRoot %>/less',
         srcJS: '<%= paths.srcRoot %>/scripts',
         srcVendor: '<%= paths.srcRoot %>/vendor',

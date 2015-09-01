@@ -1,3 +1,10 @@
+.list-inline {
+  margin: 0;
+  padding: 0;
+}
+.list-inline li {
+  display: inline-block;
+}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -369,4 +376,19 @@ th {
 }
 body {
   font-family: jockeyone, sans-serif;
+}
+a,
+a:visited,
+a:link {
+  color: #ffe400;
+  text-decoration: none;
+}
+#menu {
+  position: fixed;
+  width: 100%;
+  padding: .5em 1em;
+  text-align: center;
+}
+#menu li {
+  padding: 0 .5em;
 }
