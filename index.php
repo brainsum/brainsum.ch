@@ -63,6 +63,19 @@
   </header>
 
   <!-- SECTIONS -->
+  <section id="faces" class="clearfix">
+    <div class="wrapper container">
+      <h2 class="title">BRAINSUM</h2>
+      <p>Let's build your online business!</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="title">Our Work <span class="ampersand">&</span> Services</h2>
+      <p>Lorem</p>
+    </div>
+  </section>
 
   <script src="/dist/js/app.min.js" defer="defer" async="async"></script>
 </body>

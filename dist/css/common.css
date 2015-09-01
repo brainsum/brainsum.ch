@@ -6,6 +6,10 @@
 .clearfix:after {
   clear: both;
 }
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 .list-inline {
   margin: 0;
   padding: 0;
@@ -14,7 +18,7 @@
   display: inline-block;
 }
 .container {
-  width: 960px;
+  width: 80%;
   margin: 0 auto;
 }
 .title {
@@ -415,7 +419,6 @@ body {
   font-family: roboto;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.7);
-  background: #efefef;
 }
 a,
 a:visited,
@@ -489,7 +492,6 @@ a:link:hover {
 }
 #featured {
   padding: 2em 0;
-  min-height: 570px;
   text-align: center;
 }
 #featured img {
@@ -535,4 +537,31 @@ a:link:hover {
 }
 #doing-more h3:last-child {
   bottom: 0;
+}
+#faces .wrapper {
+  margin: 2em auto;
+}
+#faces .title {
+  font-family: jockeyone;
+  font-size: 5em;
+  line-height: 1em;
+  margin: 0;
+}
+#portfolio {
+  background: url('../img/dark-dirty-bg.jpg') repeat;
+  color: #fff;
+  padding: 50px 0;
+}
+#portfolio .title {
+  font-family: chapparal;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+#portfolio .title .ampersand {
+  display: inline-block;
+  margin: 0 -5px;
+  font-size: .7em;
+  vertical-align: text-top;
 }

@@ -44,6 +44,7 @@
 #featured {
   padding: 50px 50px 120px 0;
   text-align: left;
+  min-height: @featured-min-height;
 
   img {
     float: right;
@@ -79,9 +80,25 @@
 
 #header {
   position: relative;
+  margin-bottom: @doing-more-pane-height + @doing-more-bg-height / 2;
 }
 
 #menu {
   font-size: 1em;
   background: rgba(0, 0, 0, .4);
+}
+
+#faces {
+  .wrapper {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+  .title {
+    font-size: 10em;
+  }
+  p {
+    font-size: 2em;
+    font-style: italic;
+    font-family: chapparal;
+  }
 }

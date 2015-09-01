@@ -6,6 +6,10 @@
 .clearfix:after {
   clear: both;
 }
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 .list-inline {
   margin: 0;
   padding: 0;
@@ -14,7 +18,7 @@
   display: inline-block;
 }
 .container {
-  width: 960px;
+  width: 80%;
   margin: 0 auto;
 }
 .title {
@@ -66,6 +70,7 @@
 #featured {
   padding: 50px 50px 120px 0;
   text-align: left;
+  min-height: 570px;
 }
 #featured img {
   float: right;
@@ -94,8 +99,21 @@
 }
 #header {
   position: relative;
+  margin-bottom: 95px;
 }
 #menu {
   font-size: 1em;
   background: rgba(0, 0, 0, 0.4);
+}
+#faces .wrapper {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+#faces .title {
+  font-size: 10em;
+}
+#faces p {
+  font-size: 2em;
+  font-style: italic;
+  font-family: chapparal;
 }
