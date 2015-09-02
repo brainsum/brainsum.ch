@@ -449,11 +449,15 @@ img {
 }
 #menu {
   width: 100%;
-  padding: .6em 1.2em;
   font-size: 1.4em;
   text-align: center;
   text-transform: uppercase;
   font-family: jockeyone, sans-serif;
+}
+#menu ul {
+  padding: .6em 1.2em;
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
 }
 #menu li {
   padding: 0 .5em;
