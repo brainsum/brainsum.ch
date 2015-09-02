@@ -23,25 +23,27 @@
     font-size: 4em;
     text-align: center;
     font-family: chapparal;
+    font-style: italic;
 
     .word {
       display: inline-block;
-
-      &:first-child {
-        font-size: 1.2em;
-      }
     }
 
     .hr {
-      background: fade(@color-lightblue, 80%);
-      transform: skewX(-10deg);
+      background: fade(cyan, 80%);
+      transform: skewX(-7deg);
       color: #fff;
       span {
         display: block;
         padding: 5px 10px 0;
-        transform: skewX(10deg);
+        transform: skewX(7deg);
       }
     }
+  }
+
+  .logo {
+    width: 60%;
+    margin: 0 auto;
   }
 
   .bottom {
@@ -54,8 +56,8 @@
     text-transform: uppercase;
     width: 100%;
     text-align: right;
-    font-weight: bold;
-    font-size: .8em;
+    font-weight: 800;
+    font-size: .7em;
   }
 
   .info {
@@ -68,6 +70,8 @@
 
 #logo {
   display: block;
+  padding-top: 50px;
+  padding-bottom: 10px;
   margin: 0 auto;
 }
 

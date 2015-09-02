@@ -8,10 +8,10 @@
 
   <title>Brainsum International</title>
 
-  <link rel="stylesheet" href="dist/css/common.min.css">
-  <link rel="stylesheet" href="dist/css/tablet.min.css" media="screen and (min-width: 470px)">
-  <link rel="stylesheet" href="dist/css/desktop.min.css" media="screen and (min-width: 960px)">
-  <link rel="stylesheet" href="dist/css/wide.min.css" media="screen and (min-width: 1440px)">
+  <link rel="stylesheet" href="/dist/css/common.min.css">
+  <link rel="stylesheet" href="/dist/css/tablet.min.css" media="screen and (min-width: 470px)">
+  <link rel="stylesheet" href="/dist/css/desktop.min.css" media="screen and (min-width: 960px)">
+  <link rel="stylesheet" href="/dist/css/wide.min.css" media="screen and (min-width: 1440px)">
 </head>
 <body>
 
@@ -20,8 +20,8 @@
     <nav id="menu">
       <ul class="list-inline">
         <li><a href="#top">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#our-work">Our Work <span class="ampersand">&</span> Services</a></li>
+        <li><a href="#management">About Us</a></li>
+        <li><a href="#portfolio">Our Work <span class="ampersand">&</span> Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -29,10 +29,10 @@
     <div id="header-left">
 
       <div class="wrapper logo">
-        <object id="logo" data="/dist/img/logo.svg" type="image/svg+xml" width="230" height="150">
-          <img src="/dist/img/logo.svg" alt="BRAINSUM" width="230" height="150"/>
+        <object id="logo" data="/dist/img/logo.svg" type="image/svg+xml" width="100%">
+          <img src="/dist/img/logo.svg" alt="BRAINSUM" width="100%" />
         </object>
-        <span class="sub-logo spacious">International</span>
+        <span class="sub-logo spacious">Switzerland</span>
       </div>
 
       <div class="wrapper bottom">
@@ -41,9 +41,9 @@
           <span class="word hr"><span>HR</span></span>
           <span class="word">software</span>
         </h1>
-        <p class="info">
+        <div class="info">
           <span>State-of-the-art web design & development with Drupal.</span>
-        </p>
+        </div>
       </div>
     </div>
 
@@ -107,21 +107,21 @@
     <h2 class="section-title">Management</h2>
     <div class="items container">
       <div class="item">
-        <img src="" alt="">
+        <img src="/dist/img/rinchen-chopathar.jpg" alt="Rinchen W. Chopathar">
         <span class="name">Rinchen W. Chopathar</span>
         <span>Managing Director</span>
         <span>Management Board</span>
         <a href="mailto:chopathar@brainsum.ch">chopathar@brainsum.ch</a>
       </div>
       <div class="item">
-        <img src="" alt="">
+        <img src="/dist/img/peter-ponya.jpg" alt="Péter Pónya">
         <span class="name">Peter Pónya</span>
         <span>Managing Director</span>
         <span>Management Board</span>
         <a href="mailto:pedro@brainsum.ch">pedro@brainsum.ch</a>
       </div>
       <div class="item">
-        <img src="" alt="">
+        <img src="/dist/img/balazs-kantor.jpg" alt="Balázs Kántor">
         <span class="name">Balázs Kántor</span>
         <span>Managing Director</span>
         <span>Management Board</span>

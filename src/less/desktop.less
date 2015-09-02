@@ -23,10 +23,10 @@
 
   .title {
     white-space: nowrap;
-    margin: 1.5em 0;
+    margin: 40px 0;
     display: inline-block;
     color: @color-lightblue;
-    font-size: 3em;
+    font-size: 4.6em;
 
     .word:first-child {
       color: #000;
@@ -35,8 +35,11 @@
 
   .info {
     border-left: 2px solid @color-yellow;
+    height: 1.5em * 6;
+    line-height: 1.5em;
     span {
-      border-left: 2px solid grey;
+      margin-left: -2px;
+      border-left: 2px solid #000;
     }
   }
 }
@@ -87,7 +90,8 @@
   font-size: 1em;
   position: fixed;
   z-index: 1;
-  background: rgba(0, 0, 0, .4);
+  width: ~"calc(100% - @{header-left-width})";
+  right: 0;
 }
 
 #faces {
@@ -134,7 +138,11 @@
 }
 
 #management {
+  .items {
+    .clearfix();
+  }
   .item {
     width: 33.333%;
+    float: left;
   }
 }
