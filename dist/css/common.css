@@ -598,8 +598,9 @@ img {
   color: #ffe400;
   font-style: italic;
 }
-#portfolio .contact-block button {
-  background: 0;
+#portfolio .contact-block .message-link {
+  color: #fff;
+  display: inline-block;
   border: 1px solid #ffe400;
   text-transform: uppercase;
   padding: .8em 1.4em;

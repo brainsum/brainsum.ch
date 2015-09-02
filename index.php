@@ -78,7 +78,7 @@
 
     <div class="contact-block">
       <p><strong>Need a website</strong> for your company, brand or product?</p>
-      <button type="button" id="contact-button">Just drop us a message</button>
+      <a class="message-link" href="mailto:info@brainsum.ch">Just drop us a message</a>
     </div>
 
     <p>State-of-the-art web design & development with Drupal.</p>
