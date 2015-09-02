@@ -34,6 +34,12 @@
 .spacious {
   letter-spacing: .2em;
 }
+.section-title {
+  font-family: chapparal;
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: normal;
+}
 #header-left {
   width: 450px;
   position: absolute;
@@ -55,7 +61,7 @@
   white-space: nowrap;
   margin: 1.5em 0;
   display: inline-block;
-  color: #27fef9;
+  color: #9beae1;
   font-size: 3em;
 }
 #header-left .title .word:first-child {
@@ -68,7 +74,7 @@
   border-left: 2px solid grey;
 }
 #featured {
-  padding: 50px 50px 120px 0;
+  padding: 80px 50px 120px 80px;
   text-align: left;
   min-height: 570px;
 }
@@ -103,6 +109,8 @@
 }
 #menu {
   font-size: 1em;
+  position: fixed;
+  z-index: 1;
   background: rgba(0, 0, 0, 0.4);
 }
 #faces .wrapper {
@@ -116,4 +124,26 @@
   font-size: 2em;
   font-style: italic;
   font-family: chapparal;
+}
+#portfolio .items {
+  font-size: 0;
+}
+#portfolio .contact-block {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+#portfolio .item {
+  font-size: 1rem;
+  display: inline-block;
+  width: 33.333%;
+}
+#portfolio .item a .name {
+  transition: padding .3s ease;
+}
+#portfolio .item a:hover .name {
+  padding: 1em 2em 2em;
+}
+#management .item {
+  width: 33.333%;
 }

@@ -10,9 +10,11 @@ body {
 
 a, a:visited, a:link {
   color: @color-yellow;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
+  &, &:hover {
+    text-decoration: none;
   }
+}
+
+img {
+  max-width: 100%;
 }

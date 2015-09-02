@@ -1,14 +1,17 @@
 #portfolio {
   background: url('../img/dark-dirty-bg.jpg') repeat;
   color: #fff;
-  padding: 50px 0;
+  padding: 50px 0 250px;
+  text-align: center;
+  position: relative;
 
-  .title {
-    font-family: chapparal;
-    font-size: 2em;
+  > p:first-of-type {
+    color: @color-lightblue;
+  }
+
+  .section-title {
     text-transform: uppercase;
     margin: 0;
-    text-align: center;
 
     .ampersand {
       display: inline-block;
@@ -17,4 +20,41 @@
       vertical-align: text-top;
     }
   }
+
+  .contact-block {
+    padding: 1em 0;
+
+    p {
+      font-family: chapparal;
+      color: @color-yellow;
+      font-style: italic;
+    }
+
+    button {
+      background: 0;
+      border: 1px solid @color-yellow;
+      text-transform: uppercase;
+      padding: .8em 1.4em;
+      font-size: .8em;
+    }
+  }
+
+  .item {
+    margin: 2em 0;
+
+    > a {
+      display: inline-block;
+    }
+
+    .name {
+      display: table;
+      margin: 0 auto;
+      font-family: jockeyone;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 2em 2em 1em;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+
 }

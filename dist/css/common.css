@@ -34,6 +34,12 @@
 .spacious {
   letter-spacing: .2em;
 }
+.section-title {
+  font-family: chapparal;
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: normal;
+}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -424,12 +430,17 @@ a,
 a:visited,
 a:link {
   color: #ffe400;
-  text-decoration: none;
 }
+a,
+a:visited,
+a:link,
 a:hover,
 a:visited:hover,
 a:link:hover {
-  text-decoration: underline;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
 }
 #header {
   background: url('../img/big-shaped-bg.jpg') no-repeat;
@@ -459,7 +470,7 @@ a:link:hover {
   font-size: 1.2em;
 }
 #header-left .title .hr {
-  background: rgba(39, 254, 249, 0.8);
+  background: rgba(155, 234, 225, 0.8);
   -webkit-transform: skewX(-10deg);
           transform: skewX(-10deg);
   color: #fff;
@@ -539,29 +550,104 @@ a:link:hover {
   bottom: 0;
 }
 #faces .wrapper {
-  margin: 2em auto;
+  margin: 100px auto;
 }
 #faces .title {
   font-family: jockeyone;
-  font-size: 5em;
+  font-size: 6em;
   line-height: 1em;
   margin: 0;
 }
 #portfolio {
   background: url('../img/dark-dirty-bg.jpg') repeat;
   color: #fff;
-  padding: 50px 0;
+  padding: 50px 0 250px;
+  text-align: center;
+  position: relative;
 }
-#portfolio .title {
-  font-family: chapparal;
-  font-size: 2em;
+#portfolio > p:first-of-type {
+  color: #9beae1;
+}
+#portfolio .section-title {
   text-transform: uppercase;
   margin: 0;
-  text-align: center;
 }
-#portfolio .title .ampersand {
+#portfolio .section-title .ampersand {
   display: inline-block;
   margin: 0 -5px;
   font-size: .7em;
   vertical-align: text-top;
+}
+#portfolio .contact-block {
+  padding: 1em 0;
+}
+#portfolio .contact-block p {
+  font-family: chapparal;
+  color: #ffe400;
+  font-style: italic;
+}
+#portfolio .contact-block button {
+  background: 0;
+  border: 1px solid #ffe400;
+  text-transform: uppercase;
+  padding: .8em 1.4em;
+  font-size: .8em;
+}
+#portfolio .item {
+  margin: 2em 0;
+}
+#portfolio .item > a {
+  display: inline-block;
+}
+#portfolio .item .name {
+  display: table;
+  margin: 0 auto;
+  font-family: jockeyone;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 2em 2em 1em;
+  border-bottom: 1px solid #ddd;
+}
+#management {
+  text-align: center;
+  margin-top: -200px;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+#management .section-title {
+  color: #fff;
+  margin: 0 0 1em;
+}
+#management .items {
+  background: #fff;
+  font-size: 0;
+}
+#management .item {
+  margin: 2em 0;
+  width: 100%;
+  font-size: 1rem;
+  display: inline-block;
+}
+#management .item span,
+#management .item a {
+  display: block;
+  margin: 5px 0;
+}
+#management .item a {
+  color: rgba(0, 0, 0, 0.4);
+}
+#management .item .name {
+  font-size: 1.4em;
+}
+#contact {
+  padding: 50px 0;
+  font-family: chapparal;
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+}
+#contact a {
+  color: rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: .5em 0;
 }
