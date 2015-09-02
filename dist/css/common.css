@@ -21,6 +21,11 @@
   width: 80%;
   margin: 0 auto;
 }
+.block {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+}
 .title {
   font-family: arial;
   font-weight: 300;
@@ -35,10 +40,8 @@
   letter-spacing: .2em;
 }
 .section-title {
-  font-family: chapparal;
-  font-size: 2.5em;
+  font: 400 2.5em Headline;
   font-style: italic;
-  font-weight: normal;
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -410,21 +413,38 @@ th {
   font-style: normal;
 }
 @font-face {
-  font-family: 'chapparal';
-  src: url('../font/Chaparral-Pro-Light.eot');
-  src: url('../font/Chaparral-Pro-Light.eot?#iefix') format('embedded-opentype'), url('../font/Chaparral-Pro-Light.woff') format('woff'), url('../font/Chaparral-Pro-Light.ttf') format('truetype'), url('../font/Chaparral-Pro-Light.svg#chapparal') format('svg');
-  font-weight: normal;
-  font-style: normal;
+  font-family: Headline;
+  src: url('../font/headline/josefinslab-bolditalic.eot');
+  src: url('../font/headline/josefinslab-bolditalic.eot?#iefix') format('embedded-opentype'), url('../font/headline/josefinslab-bolditalic.woff2') format('woff2'), url('../font/headline/josefinslab-bolditalic.woff') format('woff'), url('../font/headline/josefinslab-bolditalic.ttf') format('truetype'), url('../font/headline/josefinslab-bolditalic.svg#josefin_slabbold_italic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Headline;
+  src: url('../font/headline/josefinslab-italic.eot');
+  src: url('../font/headline/josefinslab-italic.eot?#iefix') format('embedded-opentype'), url('../font/headline/josefinslab-italic.woff2') format('woff2'), url('../font/headline/josefinslab-italic.woff') format('woff'), url('../font/headline/josefinslab-italic.ttf') format('truetype'), url('../font/headline/josefinslab-italic.svg#josefin_slabitalic') format('svg');
+  font-weight: 400;
+  font-style: italic;
 }
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
+html {
+  font-family: sans-serif;
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+}
 body {
-  font-family: roboto;
-  font-size: 16px;
+  font: 400 16px roboto;
   color: rgba(0, 0, 0, 0.7);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 a,
 a:visited,
@@ -439,13 +459,11 @@ a:visited:hover,
 a:link:hover {
   text-decoration: none;
 }
-img {
-  max-width: 100%;
-}
 #header {
   background: url('../img/big-shaped-bg.jpg') no-repeat;
   background-size: cover;
   position: relative;
+  z-index: 1;
 }
 #menu {
   width: 100%;
@@ -453,23 +471,41 @@ img {
   text-align: center;
   text-transform: uppercase;
   font-family: jockeyone, sans-serif;
+  z-index: 5;
+  pointer-events: none;
 }
-#menu ul {
+#menu .ampersand {
+  color: #9beae1;
+}
+#menu .list-inline {
   padding: .6em 1.2em;
   background: rgba(0, 0, 0, 0.5);
   display: inline-block;
+  pointer-events: all;
 }
 #menu li {
   padding: 0 .5em;
 }
+#header-left {
+  position: relative;
+  z-index: 3;
+}
 #header-left .title {
-  font-size: 4em;
+  font-size: 2em;
   text-align: center;
-  font-family: chapparal;
+  font-family: Headline;
   font-style: italic;
 }
 #header-left .title .word {
   display: inline-block;
+}
+#header-left .title .word-1 {
+  position: relative;
+  top: -5px;
+}
+#header-left .title .word-2 {
+  position: relative;
+  top: 5px;
 }
 #header-left .title .hr {
   background: rgba(0, 255, 255, 0.8);
@@ -510,12 +546,26 @@ img {
   margin: 0 auto;
 }
 #featured {
+  position: relative;
   padding: 2em 0;
   text-align: center;
+  z-index: 1;
+}
+#featured .img-wrapper {
+  -webkit-perspective: 100px;
+          perspective: 100px;
 }
 #featured img {
   width: 80%;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: rotateY(-2deg);
+          transform: rotateY(-2deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 #featured a {
   color: inherit;
@@ -529,6 +579,7 @@ img {
   width: 50%;
 }
 #doing-more {
+  z-index: 3;
   font-family: jockeyone;
   text-align: center;
   text-transform: uppercase;
@@ -539,6 +590,9 @@ img {
   background: url('../img/horisontal-laborone-mood-img.jpg') no-repeat right center;
   height: 190px;
   position: relative;
+}
+#doing-more .text {
+  font-weight: 400;
 }
 #doing-more h3 {
   position: absolute;
@@ -575,7 +629,7 @@ img {
   margin: 0;
 }
 #portfolio {
-  background: url('../img/dark-dirty-bg.jpg') repeat;
+  background: #202123 url('../img/dark-dirty-bg.jpg') repeat;
   color: #fff;
   padding: 50px 0 250px;
   text-align: center;
@@ -598,23 +652,29 @@ img {
   padding: 1em 0;
 }
 #portfolio .contact-block p {
-  font-family: chapparal;
+  font-family: Headline;
   color: #ffe400;
   font-style: italic;
 }
-#portfolio .contact-block .message-link {
+#portfolio .message-link {
   color: #fff;
   display: inline-block;
   border: 1px solid #ffe400;
   text-transform: uppercase;
   padding: .8em 1.4em;
   font-size: .8em;
+  transition: background .2s linear;
+}
+#portfolio .message-link:hover {
+  background: #ffe400;
+  color: #202123;
 }
 #portfolio .item {
   margin: 2em 0;
 }
 #portfolio .item > a {
   display: inline-block;
+  max-width: 100%;
 }
 #portfolio .item .name {
   display: table;
@@ -648,6 +708,7 @@ img {
 #management .item img {
   border-radius: 50%;
   max-width: 80%;
+  margin: 0 auto;
 }
 #management .item span,
 #management .item a {
@@ -662,9 +723,8 @@ img {
 }
 #contact {
   padding: 50px 0;
-  font-family: chapparal;
+  font: 400 2em Headline;
   text-align: center;
-  font-size: 2em;
   font-style: italic;
 }
 #contact a {

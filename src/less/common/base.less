@@ -2,19 +2,24 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: sans-serif;
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+}
 body {
-  font-family: roboto;
-  font-size: 16px;
+  font: 400 16px roboto;
   color: @color-text;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
 a, a:visited, a:link {
   color: @color-yellow;
   &, &:hover {
     text-decoration: none;
   }
-}
-
-img {
-  max-width: 100%;
 }

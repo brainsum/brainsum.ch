@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -8,6 +9,8 @@
 
   <title>Brainsum International</title>
 
+  <link type="image/x-icon" rel="icon" href="/dist/favicon.ico" />
+
   <link rel="stylesheet" href="/dist/css/common.min.css">
   <link rel="stylesheet" href="/dist/css/tablet.min.css" media="screen and (min-width: 470px)">
   <link rel="stylesheet" href="/dist/css/desktop.min.css" media="screen and (min-width: 960px)">
@@ -16,6 +19,7 @@
 <body>
 
   <!-- HEADER -->
+
   <header id="header" class="clearfix">
     <nav id="menu">
       <ul class="list-inline">
@@ -27,7 +31,6 @@
     </nav>
 
     <div id="header-left">
-
       <div class="wrapper logo">
         <object id="logo" data="/dist/img/logo.svg" type="image/svg+xml" width="100%">
           <img src="/dist/img/logo.svg" alt="BRAINSUM" width="100%" />
@@ -37,9 +40,9 @@
 
       <div class="wrapper bottom">
         <h1 class="title">
-          <span class="word">Our</span>
+          <span class="word word-1">Our</span>
           <span class="word hr"><span>HR</span></span>
-          <span class="word">software</span>
+          <span class="word word-2">software</span>
         </h1>
         <div class="info">
           <span>State-of-the-art web design & development with Drupal.</span>
@@ -51,13 +54,13 @@
       <div class="img-wrapper">
         <img src="/dist/img/laborone-ref-img.jpg" alt="LaborOne HR Solutions">
       </div>
-      <a class="spacious" href="http://www.laborone.ch">www.laborone.ch</a>
+      <a class="spacious" href="http://www.laborone.ch" target="_blank">www.laborone.ch</a>
     </div>
 
     <div id="doing-more">
       <div class="wrapper">
-        <h3>We are doing more</h3>
-        <h3 class="has-arrow">
+        <h3 class="text">We are doing more</h3>
+        <h3 class="text has-arrow">
           Mobile & Web Development, E-commerce, Design
           <object id="arrow" data="/dist/img/arrow-down.svg" type="image/svg+xml" width="100%"></object>
         </h3>
@@ -66,14 +69,15 @@
   </header>
 
   <!-- SECTIONS -->
-  <section id="faces" class="clearfix">
+
+  <section id="faces" class="block clearfix">
     <div class="wrapper container">
       <h2 class="title">BRAINSUM</h2>
       <p>Let's build your online business!</p>
     </div>
   </section>
 
-  <section id="portfolio">
+  <section id="portfolio" class="block">
     <h2 class="section-title">Our Work <span class="ampersand">&</span> Services</h2>
 
     <div class="contact-block">
@@ -106,7 +110,7 @@
     </div>
   </section>
 
-  <section id="management">
+  <section id="management" class="block">
     <h2 class="section-title">Management</h2>
     <div class="items container">
       <div class="item">
@@ -133,7 +137,7 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="block">
     <a href="mailto:info@brainsum.com">info@brainsum.ch</a>
     <a href="tel:0041797552767">+41 797552767</a>
   </section>
@@ -144,10 +148,10 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
- 
+
   ga('create', 'UA-3594833-6', 'auto');
   ga('send', 'pageview');
- 
+
 </script>
 </body>
 </html>

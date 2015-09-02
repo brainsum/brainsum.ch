@@ -1,5 +1,5 @@
 #portfolio {
-  background: url('../img/dark-dirty-bg.jpg') repeat;
+  background: @color-gray url('../img/dark-dirty-bg.jpg') repeat;
   color: #fff;
   padding: 50px 0 250px;
   text-align: center;
@@ -25,18 +25,23 @@
     padding: 1em 0;
 
     p {
-      font-family: chapparal;
+      font-family: Headline;
       color: @color-yellow;
       font-style: italic;
     }
+  }
+  .message-link {
+    color: #fff;
+    display: inline-block;
+    border: 1px solid @color-yellow;
+    text-transform: uppercase;
+    padding: .8em 1.4em;
+    font-size: .8em;
+    transition: background .2s linear;
 
-    .message-link {
-      color: #fff;
-      display: inline-block;
-      border: 1px solid @color-yellow;
-      text-transform: uppercase;
-      padding: .8em 1.4em;
-      font-size: .8em;
+    &:hover {
+      background: @color-yellow;
+      color: @color-gray
     }
   }
 
@@ -45,6 +50,7 @@
 
     > a {
       display: inline-block;
+      max-width: 100%;
     }
 
     .name {

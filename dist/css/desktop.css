@@ -21,6 +21,11 @@
   width: 80%;
   margin: 0 auto;
 }
+.block {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+}
 .title {
   font-family: arial;
   font-weight: 300;
@@ -35,10 +40,8 @@
   letter-spacing: .2em;
 }
 .section-title {
-  font-family: chapparal;
-  font-size: 2.5em;
+  font: 400 2.5em Headline;
   font-style: italic;
-  font-weight: normal;
 }
 #header-left {
   width: 450px;
@@ -113,9 +116,8 @@
 #menu {
   font-size: 1em;
   position: fixed;
-  z-index: 1;
-  width: calc(100% - 450px);
-  right: 0;
+  width: 100%;
+  left: 0;
 }
 #faces .wrapper {
   margin-top: 5em;
@@ -127,15 +129,10 @@
 #faces p {
   font-size: 2em;
   font-style: italic;
-  font-family: chapparal;
+  font-family: Headline;
 }
 #portfolio .items {
   font-size: 0;
-}
-#portfolio .contact-block {
-  position: absolute;
-  right: 50px;
-  top: 50px;
 }
 #portfolio .item {
   font-size: 1rem;
