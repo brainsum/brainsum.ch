@@ -59,9 +59,7 @@
         <h3>We are doing more</h3>
         <h3 class="has-arrow">
           Mobile & Web Development, E-commerce, Design
-          <div class="arrow">
-            <!-- SVG HERE -->
-          </div>
+          <object id="arrow" data="/dist/img/arrow-down.svg" type="image/svg+xml" width="100%"></object>
         </h3>
       </div>
     </div>
