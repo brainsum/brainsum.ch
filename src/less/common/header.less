@@ -129,4 +129,16 @@
       bottom: 0;
     }
   }
+
+  // SVG wrapper for the arrow.
+  .arrow {
+    @size: 60px;
+    display: inline-block;
+    position: absolute;
+    top: @doing-more-pane-height / 2 - @size / 2;
+    margin-left: 10px;
+    width: @size;
+    height: @size;
+    outline: 1px solid #ccc;
+  }
 }

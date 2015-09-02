@@ -553,6 +553,15 @@ img {
 #doing-more h3:last-child {
   bottom: 0;
 }
+#doing-more .arrow {
+  display: inline-block;
+  position: absolute;
+  top: -14px;
+  margin-left: 10px;
+  width: 60px;
+  height: 60px;
+  outline: 1px solid #ccc;
+}
 #faces .wrapper {
   margin: 100px auto;
 }

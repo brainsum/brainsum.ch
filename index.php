@@ -57,7 +57,12 @@
     <div id="doing-more">
       <div class="wrapper">
         <h3>We are doing more</h3>
-        <h3>Mobile & Web Development, E-commerce, Design</h3>
+        <h3 class="has-arrow">
+          Mobile & Web Development, E-commerce, Design
+          <div class="arrow">
+            <!-- SVG HERE -->
+          </div>
+        </h3>
       </div>
     </div>
   </header>
