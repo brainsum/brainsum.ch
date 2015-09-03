@@ -86,7 +86,7 @@
 
     <div class="contact-block">
       <p><strong>Need a website</strong> for your company, brand or product?</p>
-      <a class="message-link" href="mailto:info@brainsum.com">Just drop us a message</a>
+      <a class="message-link" href="mailto:info@brainsum.ch">Just drop us a message</a>
     </div>
 
     <p>State-of-the-art web design & development with Drupal.</p>
@@ -122,27 +122,27 @@
         <h3 class="name">Rinchen W. Chopathar</h3>
         <em class="position">Managing Director</em>
         <strong class="sector">Management Board</strong>
-        <a href="mailto:chopathar@brainsum.com">chopathar@brainsum.ch</a>
+        <a href="mailto:chopathar@brainsum.ch">chopathar@brainsum.ch</a>
       </div>
       <div class="item">
         <img src="/dist/img/peter-ponya.jpg" alt="Péter Pónya">
         <h3 class="name">Peter Pónya</h3>
         <em class="position">Managing Director</em>
         <strong class="sector">Management Board</strong>
-        <a href="mailto:pedro@brainsum.com">pedro@brainsum.ch</a>
+        <a href="mailto:pedro@brainsum.ch">pedro@brainsum.ch</a>
       </div>
       <div class="item">
         <img src="/dist/img/balazs-kantor.jpg" alt="Balázs Kántor">
         <h3 class="name">Balázs Kántor</h3>
         <em class="position">Managing Director</em>
         <strong class="sector">Management Board</strong>
-        <a href="mailto:bkantor@brainsum.com">bkantor@brainsum.ch</a>
+        <a href="mailto:bkantor@brainsum.ch">bkantor@brainsum.ch</a>
       </div>
     </div>
   </section>
 
   <section id="contact" class="block">
-    <a href="mailto:info@brainsum.com">info@brainsum.ch</a>
+    <a href="mailto:info@brainsum.ch">info@brainsum.ch</a>
     <a href="tel:0041797552767">+41 797552767</a>
   </section>
 
