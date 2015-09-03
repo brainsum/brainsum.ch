@@ -175,3 +175,33 @@
         height: @size;
     }
 }
+
+// Hotfix should be refactored
+
+@media screen and (max-width: 1366px) {
+    #featured img {
+        width: 500px !important;
+    }
+}
+@media screen and (max-width: 1280px) {
+    #header-left .title {
+        font-size: 42px !important;
+    }
+    #featured img {
+        width: 460px !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #header-left .title {
+        font-size: 42px !important;
+
+        .word-2 {
+            display: block;
+        }
+    }
+    #featured {
+        img {
+            width: 460px;
+        }
+    }
+}

@@ -620,6 +620,30 @@ a:link:hover {
   width: 60px;
   height: 60px;
 }
+@media screen and (max-width: 1366px) {
+  #featured img {
+    width: 500px !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #header-left .title {
+    font-size: 42px !important;
+  }
+  #featured img {
+    width: 460px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #header-left .title {
+    font-size: 42px !important;
+  }
+  #header-left .title .word-2 {
+    display: block;
+  }
+  #featured img {
+    width: 460px;
+  }
+}
 #faces .wrapper {
   margin: 100px auto;
 }
@@ -658,6 +682,31 @@ a:link:hover {
   padding: 50px 0 250px;
   text-align: center;
   position: relative;
+  overflow: hidden;
+}
+#portfolio:before,
+#portfolio:after {
+  display: block;
+  position: absolute;
+  content: " ";
+  width: 300px;
+  height: 300px;
+  background: #45494c;
+  -webkit-transform: rotate(55deg);
+          transform: rotate(55deg);
+  pointer-events: none;
+}
+#portfolio:before {
+  left: 0;
+  top: 0;
+  margin-left: -120px;
+  margin-top: -190px;
+}
+#portfolio:after {
+  right: 0;
+  bottom: 0;
+  margin-right: -120px;
+  margin-bottom: -190px;
 }
 #portfolio > p:first-of-type {
   color: #9beae1;

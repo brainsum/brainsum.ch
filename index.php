@@ -24,7 +24,6 @@
     <nav id="menu">
       <ul class="list-inline">
         <li><a href="#top">Home</a></li>
-        <li><a href="#management">About Us</a></li>
         <li><a href="#portfolio">Our Work <span class="ampersand">&</span> Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
