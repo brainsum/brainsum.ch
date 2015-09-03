@@ -2,7 +2,7 @@
 default:
   - 'css'
   - 'js'
-  - 'watch'
+  - 'watch:all'
 
 # Compile LESS, auto-prefix and minify CSS
 css:
@@ -19,7 +19,7 @@ js:
   - 'watch:js'
 
 # Lint, concatenate and Closure Compile JS files
-'js:cc':
+cc:
   - 'jshint'
   - 'concat'
   - 'closurecompiler'

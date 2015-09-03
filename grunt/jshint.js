@@ -32,7 +32,7 @@ module.exports = {
 
   files: {
     src: [
-      '<%= paths.srcJS %>/**/*.js'
+      'src/scripts/**/*.js'
     ]
   }
 

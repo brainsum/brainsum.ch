@@ -11,12 +11,17 @@ module.exports = {
   },
 
   js: {
-    files: ['<%= paths.srcJS %>/**/*.js'],
-    tasks: ['concat', 'uglify'],
+    files: 'src/scripts/**/*.js',
+    tasks: ['jshint', 'concat', 'uglify'],
   },
 
   less: {
-    files: '<%= paths.srcLESS %>/**/*.less',
+    files: 'src/less/**/*.less',
     tasks: ['less', 'autoprefixer', 'cssmin']
   },
+
+  all: {
+    files: ['src/scripts/**/*.js', 'src/less/**/*.less'],
+    tasks: ['jshint', 'concat', 'uglify', 'less', 'autoprefixer', 'cssmin']
+  }
 };

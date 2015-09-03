@@ -11,10 +11,10 @@ module.exports = {
 
   files: {
     src: [
-      '<%= paths.srcJS %>/**/*.js',
+      'src/scripts/**/*.js',
     ],
 
-    dest: '<%= paths.distJS %>/<%= names.distJS %>.js'
+    dest: 'dist/js/app.js'
   }
 
 };
