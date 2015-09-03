@@ -7,7 +7,7 @@
   <meta name="description" content="Brainsum International - Let's build your online business!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Brainsum International</title>
+  <title>Brainsum Switzerland</title>
 
   <link type="image/x-icon" rel="icon" href="/dist/favicon.ico" />
 
