@@ -629,23 +629,28 @@ a:link:hover {
   line-height: 1em;
   margin: 0;
 }
+#faces p {
+  clear: both;
+}
 #parallax {
   position: relative;
-  height: 160px;
-  width: 600px;
   overflow: hidden;
+  float: left;
+  background-color: #868E91;
 }
 #parallax #parallax-back {
   position: absolute;
-  background: url('../img/brainsum-typo-with-faces.png') 10% center no-repeat;
+  background: #868e91 url('../img/mask.jpg') center no-repeat;
+  top: 0;
+  height: 100%;
   width: 100%;
-  height: 320px;
-  top: -50%;
-  background-size: 120%;
+  background-size: 100%;
 }
 #parallax #parallax-front {
-  z-index: 1;
-  position: absolute;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  max-width: 100%;
+  float: left;
 }
 #portfolio {
   background: #202123 url('../img/dark-dirty-bg.jpg') repeat;

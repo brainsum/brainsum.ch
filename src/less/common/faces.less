@@ -8,53 +8,30 @@
     line-height: 1em;
     margin: 0;
   }
+
+  p {
+    clear: both;
+  }
 }
 
-// .parallax {
-//   perspective: 1px;
-//   height: 160px;
-//   width: 100%;
-//   overflow-x: hidden;
-//   overflow-y: auto;
-//   -webkit-perspective-origin-x: 100%;
-//   perspective-origin-x: 100%;
-// }
-
-// .parallax-group {
-//   position: relative;
-//   height: 160px;
-//   width: 100%;
-//   transform-style: preserve-3d;
-// }
-
-// .parallax-layer {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   -webkit-transform-origin-x: 100%;
-//   transform-origin-x: 100%;
-// }
-
 #parallax {
-  @height: 160px;
   position: relative;
-  height: @height;
-  width: 600px;
   overflow: hidden;
+  float: left;
+  background-color: #868E91;
 
   #parallax-back {
     position: absolute;
-    background: url('../img/brainsum-typo-with-faces.png') 10% center no-repeat;
+    background: #868E91 url('../img/mask.jpg') center no-repeat;
+    top: 0;
+    height: 100%;
     width: 100%;
-    height: @height * 2;
-    top: -50%;
-    background-size: 120%;
+    background-size: 100%;
   }
 
   #parallax-front {
-    z-index: 1;
-    position: absolute;
+    transform: translateZ(0);
+    max-width: 100%;
+    float: left;
   }
 }

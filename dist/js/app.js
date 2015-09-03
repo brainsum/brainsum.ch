@@ -11,7 +11,7 @@
      * The lower this is, the faster the background scrolls.
      * @type {Number}
      */
-    divider: 10,
+    divider: 20,
 
     /**
      * Reference to the background element.

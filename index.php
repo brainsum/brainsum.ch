@@ -73,10 +73,10 @@
   <section id="faces" class="block clearfix">
     <div class="wrapper container">
       <div id="parallax">
+        <div id="parallax-back"></div>
         <object id="parallax-front" data="/dist/img/brainsum-mask.svg" type="image/svg+xml" >
           <img src="/dist/img/brainsum-mask.png" alt="BRAINSUM" />
         </object>
-        <div id="parallax-back"></div>
       </div>
       <p>Let's build your online business!</p>
     </div>
