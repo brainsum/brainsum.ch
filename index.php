@@ -72,7 +72,12 @@
 
   <section id="faces" class="block clearfix">
     <div class="wrapper container">
-      <h2 class="title">BRAINSUM</h2>
+      <div id="parallax">
+        <object id="parallax-front" data="/dist/img/brainsum-mask.svg" type="image/svg+xml" >
+          <img src="/dist/img/brainsum-mask.png" alt="BRAINSUM" />
+        </object>
+        <div id="parallax-back"></div>
+      </div>
       <p>Let's build your online business!</p>
     </div>
   </section>
@@ -115,23 +120,23 @@
     <div class="items container">
       <div class="item">
         <img src="/dist/img/rinchen-chopathar.jpg" alt="Rinchen W. Chopathar">
-        <span class="name">Rinchen W. Chopathar</span>
-        <span>Managing Director</span>
-        <span>Management Board</span>
+        <h3 class="name">Rinchen W. Chopathar</h3>
+        <em class="position">Managing Director</em>
+        <strong class="sector">Management Board</strong>
         <a href="mailto:chopathar@brainsum.com">chopathar@brainsum.ch</a>
       </div>
       <div class="item">
         <img src="/dist/img/peter-ponya.jpg" alt="Péter Pónya">
-        <span class="name">Peter Pónya</span>
-        <span>Managing Director</span>
-        <span>Management Board</span>
+        <h3 class="name">Peter Pónya</h3>
+        <em class="position">Managing Director</em>
+        <strong class="sector">Management Board</strong>
         <a href="mailto:pedro@brainsum.com">pedro@brainsum.ch</a>
       </div>
       <div class="item">
         <img src="/dist/img/balazs-kantor.jpg" alt="Balázs Kántor">
-        <span class="name">Balázs Kántor</span>
-        <span>Managing Director</span>
-        <span>Management Board</span>
+        <h3 class="name">Balázs Kántor</h3>
+        <em class="position">Managing Director</em>
+        <strong class="sector">Management Board</strong>
         <a href="mailto:bkantor@brainsum.com">bkantor@brainsum.ch</a>
       </div>
     </div>
@@ -143,15 +148,15 @@
   </section>
 
   <script src="/dist/js/app.min.js" defer="defer" async="async"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-3594833-6', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-3594833-6', 'auto');
+    ga('send', 'pageview');
 
-</script>
+  </script>
 </body>
 </html>
