@@ -475,7 +475,15 @@ a:link:hover {
   z-index: 5;
   pointer-events: none;
 }
-#menu .ampersand {
+#menu .link {
+  transition: color 0.5s ease-out;
+}
+#menu .link:hover {
+  color: #ffffff;
+}
+#menu .lite {
+  display: inline-block;
+  margin: 0 .1em;
   color: #9beae1;
 }
 #menu .list-inline {
@@ -499,6 +507,9 @@ a:link:hover {
 }
 #header-left .title .word {
   display: inline-block;
+}
+#header-left .title .word + .word {
+  margin-left: .2em;
 }
 #header-left .title .word-1 {
   position: relative;
@@ -553,39 +564,42 @@ a:link:hover {
   z-index: 1;
 }
 #featured .img-wrapper {
-  -webkit-perspective: 100px;
-          perspective: 100px;
+  -webkit-perspective: 1300px;
+          perspective: 1300px;
 }
 #featured img {
   width: 80%;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transform: rotateY(-2deg);
-          transform: rotateY(-2deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotateY(-30deg);
+          transform: rotateY(-30deg);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-#featured a {
+#featured .link {
+  display: inline-block;
   color: inherit;
   text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   padding: 1em 2em;
   font-size: .8em;
   font-weight: 800;
-  display: block;
   margin: 2em auto;
-  width: 50%;
+  transition: background 1s linear;
+}
+#featured .link:hover {
+  background: #ffffff;
 }
 #doing-more {
-  z-index: 3;
+  position: relative;
   font-family: jockeyone;
   text-align: center;
   text-transform: uppercase;
   font-size: .8em;
-  position: relative;
+  z-index: 3;
 }
 #doing-more .wrapper {
   background: url('../img/horisontal-laborone-mood-img.jpg') no-repeat right center;

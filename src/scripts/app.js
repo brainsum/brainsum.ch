@@ -31,4 +31,28 @@
     _.elem.style.marginTop = (_.offset / _.divider) + "px";
   };
 
+  /**
+   * [MODULE] FEATURED-SPLASH
+   *
+   * Follows the mouse to face it in 3 dimensions
+   */
+  var FeaturedSplash = {
+    /** @var {HTMLElement} - Container element to relative to */
+    container: undefined,
+
+    /** @var {HTMLElement} - Image which should transforms by mouse */
+    image: undefined,
+
+    init: function () {
+      this.container = document.getElementById('header');
+      this.image = document.getElementById('screen');
+
+      console.log(this.container.offsetWidth, this.container.offsetHeight);
+    }
+  };
+
+  // Appending event listeners
+
+  FeaturedSplash.init();
+
 })(window, document);
