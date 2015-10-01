@@ -7,7 +7,7 @@ module.exports = function(grunt) {
       // List of supported browsers. Uses caniuse.com database.
       // @see https://github.com/ai/browserslist
       browsers: [
-        'last 2 versions',
+        'last 2 versions'
       ],
 
       // Filenames.
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
         tablet: 'tablet',
         desktop: 'desktop',
         wide: 'wide',
-        js: 'app',
+        js: 'app'
       },
 
       // Path references.

@@ -1,37 +1,64 @@
 #faces {
-  .wrapper {
-    margin: 100px auto;
-  }
-  .title {
-    font-family: jockeyone;
-    font-size: 6em;
-    line-height: 1em;
-    margin: 0;
-  }
+    text-align: center;
 
-  p {
-    clear: both;
-  }
+    .wrapper {
+        margin: 100px auto;
+    }
+    .title {
+        font-family: jockeyone;
+        font-size: 6em;
+        line-height: 1em;
+        margin: 0;
+    }
+    p {
+        clear: both;
+    }
 }
 
 #parallax {
-  position: relative;
-  overflow: hidden;
-  float: left;
-  background-color: #868E91;
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    line-height: 0;
+    background: #868E91;
+    backface-visibility: hidden;
+    overflow: hidden;
+    z-index: 1;
 
-  #parallax-back {
-    position: absolute;
-    background: #868E91 url('../img/mask.jpg') center no-repeat;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
-  }
-
-  #parallax-front {
-    transform: translateZ(0);
-    max-width: 100%;
-    float: left;
-  }
+    &-back, .layer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    &-mask {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+    .layer {
+        background-size: cover;
+        background-position: center;
+    }
 }
+
+#layer-00 {background-image: url(../img/brainsum/00-lali.png)}
+#layer-01 {background-image: url(../img/brainsum/01-peti.png)}
+#layer-02 {background-image: url(../img/brainsum/02-pedro.png)}
+#layer-03 {background-image: url(../img/brainsum/03-dominika.png)}
+#layer-04 {background-image: url(../img/brainsum/04-eszter.png)}
+#layer-05 {background-image: url(../img/brainsum/05-balazs.png)}
+#layer-06 {background-image: url(../img/brainsum/06-tomi.png)}
+#layer-07 {background-image: url(../img/brainsum/07-tasi.png)}
+#layer-08 {background-image: url(../img/brainsum/08-adam.png)}
+#layer-09 {background-image: url(../img/brainsum/09-krisz.png)}
+#layer-10 {background-image: url(../img/brainsum/10-mark.png)}
+#layer-11 {background-image: url(../img/brainsum/11-marton.png)}
+#layer-12 {background-image: url(../img/brainsum/12-tamas.png)}
+#layer-13 {background-image: url(../img/brainsum/13-gergo.png)}
+#layer-14 {background-image: url(../img/brainsum/14-erik.png)}
+#layer-15 {background-image: url(../img/brainsum/15-zsuzsa.png)}
+#layer-16 {background-image: url(../img/brainsum/16-richie.png)}

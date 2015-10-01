@@ -12,7 +12,7 @@ module.exports = {
 
   js: {
     files: 'src/scripts/**/*.js',
-    tasks: ['jshint', 'concat', 'uglify'],
+    tasks: ['concat', 'uglify']
   },
 
   less: {
@@ -22,6 +22,6 @@ module.exports = {
 
   all: {
     files: ['src/scripts/**/*.js', 'src/less/**/*.less'],
-    tasks: ['jshint', 'concat', 'uglify', 'less', 'autoprefixer', 'cssmin']
+    tasks: ['concat', 'uglify', 'less', 'autoprefixer', 'cssmin']
   }
 };

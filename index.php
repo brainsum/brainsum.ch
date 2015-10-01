@@ -35,9 +35,7 @@
 
     <div id="header-left">
         <div class="wrapper logo">
-            <object id="logo" data="img/logo.svg" type="image/svg+xml" width="100%">
-                <img src="img/logo.svg" alt="Brainsum" width="100%"/>
-            </object>
+            <img id="logo" src="img/brainsum-logo.svg" alt="Brainsum" width="100%"/>
             <span class="sub-logo spacious">Switzerland</span>
         </div>
 
@@ -75,17 +73,19 @@
 
 <!-- SECTIONS -->
 
-<section id="faces" class="block clearfix">
+<div id="faces" class="block clearfix">
     <div class="wrapper container">
         <div id="parallax">
-            <div id="parallax-back"></div>
-            <object id="parallax-front" data="img/brainsum-mask.svg" type="image/svg+xml">
-                <img src="img/brainsum-mask.png" alt="BRAINSUM"/>
-            </object>
+            <div id="parallax-back">
+                <?php for ($i = 0; $i <= 16; $i++) : ?>
+                    <div class="layer" id="layer-<?= strlen($i) === 1 ? '0'.$i : $i ?>"></div>
+                <?php endfor ?>
+            </div>
+            <img id="parallax-mask" src="img/brainsum-mask.svg" alt="Brainsum"/>
         </div>
         <p>Let's build your online business!</p>
     </div>
-</section>
+</div>
 
 <section id="portfolio" class="block">
     <h2 class="section-title">Our Work <span class="ampersand">&</span> Services</h2>
