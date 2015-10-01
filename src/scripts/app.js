@@ -14,28 +14,6 @@
     }
 
     /**
-     * Throttles the event listeners to prevent 60 FPS calculating
-     *
-     * @param {Function} method
-     * @param {Number} time
-     * @param {*} [scope]
-     */
-    var throttle = function (method, time, scope) {
-        var lock = false;
-
-        return function () {
-            if (lock === true) {
-                return;
-            }
-            lock = true;
-            setTimeout(function () {
-                lock = false;
-                method.apply(scope, arguments);
-            }, time)
-        };
-    };
-
-    /**
      * [MODULE] PARALLAX
      *
      * Creates a multiple layered parallax effect for the big Brainsum logo
@@ -56,7 +34,7 @@
             self.node = document.getElementById('parallax');
             self.list = self.getLayers('#parallax-back .layer');
 
-            window.addEventListener('scroll', throttle(function () {
+            window.addEventListener('scroll', function () {
                 var p = self.getDimensions();
 
                 for (var i = 0, l = self.list.length; i < l; i ++) {
@@ -64,7 +42,7 @@
                         "translateY(", self.getLayerY(p, self.list[i].rate), "px)"
                     ].join('')
                 }
-            }, _time), false);
+            }, false);
         },
 
         getLayers: function (selector) {
