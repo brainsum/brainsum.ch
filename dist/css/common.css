@@ -475,7 +475,15 @@ a:link:hover {
   z-index: 5;
   pointer-events: none;
 }
-#menu .ampersand {
+#menu .link {
+  transition: color 0.5s ease-out;
+}
+#menu .link:hover {
+  color: #ffffff;
+}
+#menu .lite {
+  display: inline-block;
+  margin: 0 .1em;
   color: #9beae1;
 }
 #menu .list-inline {
@@ -499,6 +507,9 @@ a:link:hover {
 }
 #header-left .title .word {
   display: inline-block;
+}
+#header-left .title .word + .word {
+  margin-left: .2em;
 }
 #header-left .title .word-1 {
   position: relative;
@@ -553,39 +564,42 @@ a:link:hover {
   z-index: 1;
 }
 #featured .img-wrapper {
-  -webkit-perspective: 100px;
-          perspective: 100px;
+  -webkit-perspective: 3000px;
+          perspective: 3000px;
 }
 #featured img {
   width: 80%;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transform: rotateY(-2deg);
-          transform: rotateY(-2deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotateY(-15deg) rotateX(15deg);
+          transform: rotateY(-15deg) rotateX(15deg);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-#featured a {
+#featured .link {
+  display: inline-block;
   color: inherit;
   text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   padding: 1em 2em;
   font-size: .8em;
   font-weight: 800;
-  display: block;
   margin: 2em auto;
-  width: 50%;
+  transition: background 1s linear;
+}
+#featured .link:hover {
+  background: #ffffff;
 }
 #doing-more {
-  z-index: 3;
+  position: relative;
   font-family: jockeyone;
   text-align: center;
   text-transform: uppercase;
   font-size: .8em;
-  position: relative;
+  z-index: 3;
 }
 #doing-more .wrapper {
   background: url('../img/horisontal-laborone-mood-img.jpg') no-repeat right center;
@@ -644,6 +658,9 @@ a:link:hover {
     width: 460px;
   }
 }
+#faces {
+  text-align: center;
+}
 #faces .wrapper {
   margin: 100px auto;
 }
@@ -657,24 +674,85 @@ a:link:hover {
   clear: both;
 }
 #parallax {
+  display: inline-block;
   position: relative;
+  width: 80%;
+  line-height: 0;
+  background: #868E91;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   overflow: hidden;
-  float: left;
-  background-color: #868E91;
+  z-index: 1;
 }
-#parallax #parallax-back {
+#parallax-back,
+#parallax .layer {
   position: absolute;
-  background: #868e91 url('../img/mask.jpg') center no-repeat;
+  left: 0;
   top: 0;
-  height: 100%;
-  width: 100%;
-  background-size: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
-#parallax #parallax-front {
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  max-width: 100%;
-  float: left;
+#parallax-mask {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+#parallax .layer {
+  background-size: cover;
+  background-position: center;
+}
+#layer-00 {
+  background-image: url(../img/brainsum/00-lali.png);
+}
+#layer-01 {
+  background-image: url(../img/brainsum/01-peti.png);
+}
+#layer-02 {
+  background-image: url(../img/brainsum/02-pedro.png);
+}
+#layer-03 {
+  background-image: url(../img/brainsum/03-dominika.png);
+}
+#layer-04 {
+  background-image: url(../img/brainsum/04-eszter.png);
+}
+#layer-05 {
+  background-image: url(../img/brainsum/05-balazs.png);
+}
+#layer-06 {
+  background-image: url(../img/brainsum/06-tomi.png);
+}
+#layer-07 {
+  background-image: url(../img/brainsum/07-tasi.png);
+}
+#layer-08 {
+  background-image: url(../img/brainsum/08-adam.png);
+}
+#layer-09 {
+  background-image: url(../img/brainsum/09-krisz.png);
+}
+#layer-10 {
+  background-image: url(../img/brainsum/10-mark.png);
+}
+#layer-11 {
+  background-image: url(../img/brainsum/11-marton.png);
+}
+#layer-12 {
+  background-image: url(../img/brainsum/12-tamas.png);
+}
+#layer-13 {
+  background-image: url(../img/brainsum/13-gergo.png);
+}
+#layer-14 {
+  background-image: url(../img/brainsum/14-erik.png);
+}
+#layer-15 {
+  background-image: url(../img/brainsum/15-zsuzsa.png);
+}
+#layer-16 {
+  background-image: url(../img/brainsum/16-richie.png);
 }
 #portfolio {
   background: #202123 url('../img/dark-dirty-bg.jpg') repeat;
