@@ -5,3 +5,4 @@ Thumbs.db
 vendor
 src/vendor
 bower_components
+*.log
